@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "abacus-llm"
+version = "0.1.0"
+description = "Terrible attempts at creating a LLM"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "tiktoken>=0.5.1",
+    "matplotlib>=3.7.1",
+    "tqdm>=4.66.1",
+    "numpy>=1.26",
+    "pandas>=2.2.1",
+    "psutil>=5.9.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyterlab>=4.0",
+]
+
+# Platform-specific dependencies are kept in requirements.txt due to
+# complex environment markers for torch and tensorflow.
+
+[tool.setuptools.packages.find]
+where = ["."]
