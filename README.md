@@ -63,7 +63,7 @@ graph TD
 ### Project Stages
 
 - [ ] **Stage 1: Building an LLM** - Implements the data sampling and understand the basic mechanism
-  - [ ] 1) Data preparation & sampling
+  - [X] 1) Data preparation & sampling
   - [ ] 2) Attention mechanism
   - [ ] 3) LLM architecture
   - [ ] 4) Pretraining
@@ -98,18 +98,6 @@ uv sync
 ```
 
 This will create a virtual environment and install all dependencies from the lock file.
-
-## Requirements
-
-- **torch** ≥ 2.2.2 - Deep learning framework
-- **tensorflow** ≥ 2.16.2 - Alternative ML framework
-- **jupyterlab** ≥ 4.0 - Interactive notebooks
-- **tiktoken** ≥ 0.5.1 - Tokenization
-- **matplotlib** ≥ 3.7.1 - Visualization
-- **numpy** ≥ 1.26 - Numerical computing
-- **pandas** ≥ 2.2.1 - Data manipulation
-- **tqdm** ≥ 4.66.1 - Progress bars
-- **psutil** ≥ 5.9.5 - System monitoring
 
 ## License
 
