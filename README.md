@@ -103,5 +103,6 @@ This will create a virtual environment and install all dependencies from the loc
 
 See [LICENSE](LICENSE) for details.
 
+## Citations & Acknowledgments
 
-
+Raschka, S. (2025) Build a Large Language Model (From Scratch). Manning Publications. Available at: https://www.manning.com/books/build-a-large-language-model-from-scratch.
