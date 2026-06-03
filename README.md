@@ -64,7 +64,7 @@ graph TD
 
 - [ ] **Stage 1: Building an LLM** - Implements the data sampling and understand the basic mechanism
   - [X] 1) Data preparation & sampling
-  - [ ] 2) Attention mechanism
+  - [X] 2) Attention mechanism
   - [ ] 3) LLM architecture
   - [ ] 4) Pretraining
 
