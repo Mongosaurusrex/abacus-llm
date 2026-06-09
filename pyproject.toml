@@ -17,6 +17,8 @@ dependencies = [
     "numpy>=1.26",
     "pandas>=2.2.1",
     "psutil>=5.9.5",
+    "black>=26.5.1",
+    "torch>=2.12.0",
 ]
 
 [project.optional-dependencies]
@@ -24,8 +26,8 @@ dev = [
     "jupyterlab>=4.0",
 ]
 
-# Platform-specific dependencies are kept in requirements.txt due to
-# complex environment markers for torch and tensorflow.
+[tool.hatch.build.targets.wheel]
+packages = ["abacus-llm"]
 
 [tool.setuptools.packages.find]
 where = ["."]
