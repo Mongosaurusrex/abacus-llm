@@ -51,23 +51,12 @@ def create_dataloader(
     return dataloader
 
 
-if __name__ == "__main__":
-    import os
-    import urllib.request
+def run_tokenizer_test(sample_path="the-verdict.txt"):
+    torch.manual_seed(123)
+    print("=" * 50)
+    print("Testing tokenizer and dataloader...")
 
-    url = (
-        "https://raw.githubusercontent.com/rasbt/"
-        "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
-        "the-verdict.txt"
-    )
-    filename = "the-verdict.txt"
-    if not os.path.exists(filename):
-        print(f"Downloading {filename}...")
-        urllib.request.urlretrieve(url, filename)
-    else:
-        print(f"{filename} already exists. Skipping download.")
-
-    with open("the-verdict.txt", "r", encoding="utf-8") as f:
+    with open(sample_path, "r", encoding="utf-8") as f:
         raw_text = f.read()
 
     vocab_size = 50257
@@ -83,14 +72,15 @@ if __name__ == "__main__":
         raw_text, batch_size=batch_size, max_length=max_length, stride=max_length
     )
 
-    for batch in dataloader:
-        x, y = batch
+    x, y = next(iter(dataloader))
+    token_embeddings = token_embedding_layer(x)
+    pos_embeddings = pos_embedding_layer(torch.arange(max_length))
+    input_embeddings = token_embeddings + pos_embeddings
 
-        token_embeddings = token_embedding_layer(x)
-        pos_embeddings = pos_embedding_layer(torch.arange(max_length))
+    print("Input IDs shape:", x.shape)
+    print("Target IDs shape:", y.shape)
+    print("Input embeddings shape:", input_embeddings.shape)
 
-        input_embeddings = token_embeddings + pos_embeddings
 
-        break
-
-    print(input_embeddings.shape)
+if __name__ == "__main__":
+    run_tokenizer_test()

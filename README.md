@@ -65,7 +65,7 @@ graph TD
 - [ ] **Stage 1: Building an LLM** - Implements the data sampling and understand the basic mechanism
   - [X] 1) Data preparation & sampling
   - [X] 2) Attention mechanism
-  - [ ] 3) LLM architecture
+  - [X] 3) LLM architecture
   - [ ] 4) Pretraining
 
 - [ ] **Stage 2: Foundation model** - Pretrains the LLM on unlabeled data to obtain a foundation model for further fine-tuning
@@ -106,3 +106,5 @@ See [LICENSE](LICENSE) for details.
 ## Citations & Acknowledgments
 
 Raschka, S. (2025) Build a Large Language Model (From Scratch). Manning Publications. Available at: https://www.manning.com/books/build-a-large-language-model-from-scratch.
+
+Radford, A., Wu, J., Child, R., Luan, D., Amodei, D. and Sutskever, I. (2019) Language Models are Unsupervised Multitask Learners. OpenAI. Available at: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf.
