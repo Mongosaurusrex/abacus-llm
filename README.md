@@ -62,19 +62,18 @@ graph TD
 
 ### Project Stages
 
-- [ ] **Stage 1: Building an LLM** - Implements the data sampling and understand the basic mechanism
+- [X] **Stage 1: Building an LLM** - Implements the data sampling and understand the basic mechanism
   - [X] 1) Data preparation & sampling
   - [X] 2) Attention mechanism
   - [X] 3) LLM architecture
-  - [ ] 4) Pretraining
+  - [X] 4) Pretraining
 
-- [ ] **Stage 2: Foundation model** - Pretrains the LLM on unlabeled data to obtain a foundation model for further fine-tuning
-  - [ ] 5) Training loop
-  - [ ] 6) Model evaluation
-  - [ ] 7) Load pretrained weights
+- [X] **Stage 2: Foundation model** - Pretrains the LLM on unlabeled data to obtain a foundation model for further fine-tuning
+  - [X] 5) Training loop
+  - [X] 6) Model evaluation
+  - [X] 7) Load pretrained weights
 
 - [ ] **Stage 3: Classification & Assistant** - Fine-tunes the pretrained LLM to create specialized models
-  - [ ] 8) Fine-tuning Classifier
   - [ ] 9) Fine-tuning Personal assistant
 
 ## Installation
