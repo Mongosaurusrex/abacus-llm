@@ -36,18 +36,6 @@ class GPTModel(nn.Module):
         logits = self.output_projection(x)
         return logits
 
-def generate_text_simple(model, idx, max_new_tokens, context_size):
-    for _ in range(max_new_tokens):
-        idx_cond = idx[:, -context_size:]
-        with torch.no_grad():
-            logits = model(idx_cond)
-        
-        logits = logits[:, -1, :]
-        probas = torch.softmax(logits, dim=-1)
-        next_token = torch.argmax(probas, dim=-1, keepdim=True)
-        idx = torch.cat((idx, next_token), dim=1)
-    
-    return idx
 
 def run_gpt_model_test(config):
     import tiktoken
@@ -63,7 +51,7 @@ def run_gpt_model_test(config):
     batch.append(torch.tensor(tokenizer.encode(txt2)))
     batch = torch.stack(batch, dim=0)
 
-    torch.manual_seed(123)
+    torch.manual_seed(1234)
     print("=" * 50)
     print("Testing GPTModel...")
     model = GPTModel(config)
@@ -80,28 +68,13 @@ def run_gpt_model_test(config):
     total_params_gpt2 = total_params - sum(
         p.numel() for p in model.output_projection.parameters()
     )
-    print(f"Total parameters in GPT-2 124M (excluding output layer): {total_params_gpt2:,}")
+    print(
+        f"Total parameters in GPT-2 124M (excluding output layer): {total_params_gpt2:,}"
+    )
 
     total_size_bytes = total_params * 4
     total_size_mb = total_size_bytes / (1024 * 1024)
     print(f"Total model size in memory (float32): {total_size_mb:.2f} MB")
-
-    print("\nTesting text generation...")
-    start_context = "Hello, I am"
-    encoded = tokenizer.encode(start_context)
-    print("Start context:", start_context)
-    print("Encoded context:", encoded)
-    encoded_tensor = torch.tensor(encoded).unsqueeze(0)
-    print("Encoded context tensor shape:", encoded_tensor.shape)
-
-    model.eval()
-    generated_ids = generate_text_simple(
-        model, encoded_tensor, max_new_tokens=10, context_size=config["context_length"]
-    )
-    print("Generated token IDs:", generated_ids)
-    print("Generated text length:", len(generated_ids[0]))
-
-    print("Decoded generated text:", tokenizer.decode(generated_ids.squeeze(0).tolist()))
 
 
 if __name__ == "__main__":

@@ -14,11 +14,11 @@ This project explores building language models from scratch, implementing variou
 
 ## Features
 
-- PyTorch-based implementations
-- TensorFlow support for alternative backends
-- Jupyter notebook experimentation environment
-- Visualization tools for model analysis
-- Cross-platform compatibility (macOS, Linux, Windows)
+- Modular GPT implementation in PyTorch
+- Separate attention, layer, and model modules
+- Reproducible smoke tests for data and model components
+- Config presets for multiple model sizes and training defaults
+- Simple Makefile targets for common test runs
 
 ## Project Pipeline
 
