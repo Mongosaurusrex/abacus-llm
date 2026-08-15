@@ -1,4 +1,4 @@
-.PHONY: format install help run train preload-weights smoke-attention smoke-layers smoke-gpt smoke-data smoke-tests
+.PHONY: format install help run train finetune preload-weights smoke-attention smoke-layers smoke-gpt smoke-data smoke-tests
 
 PYTHON := .venv/bin/python
 
@@ -7,6 +7,7 @@ help:
 	@echo "  make install  - Install dependencies"
 	@echo "  make format   - Format code with Black"
 	@echo "  make run             - Load model and start interactive prompt"
+	@echo "  make finetune        - Run finetuning workflow"
 	@echo "  make preload-weights - Download and convert GPT-2 pretrained weights"
 	@echo "  make smoke-attention - Run attention module smoke test"
 	@echo "  make smoke-layers    - Run layers module smoke test"
@@ -20,6 +21,9 @@ format:
 train:
 	PYTHONPATH=abacus-llm $(PYTHON) abacus-llm/train.py
 
+finetune:
+	PYTHONPATH=abacus-llm $(PYTHON) abacus-llm/data/fine-tuning.py
+	
 run:
 	PYTHONPATH=abacus-llm $(PYTHON) abacus-llm/main.py
 
