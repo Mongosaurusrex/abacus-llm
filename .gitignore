@@ -220,5 +220,8 @@ __marimo__/
 the-verdict.txt
 small-text-sample.txt
 
-model.pth
+mode*.pth
 instruction-data.json
+alpaca-cleaned.json
+instruction-data-with-response*
+*.pdf

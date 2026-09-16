@@ -73,8 +73,8 @@ graph TD
   - [X] 6) Model evaluation
   - [X] 7) Load pretrained weights
 
-- [ ] **Stage 3: Classification & Assistant** - Fine-tunes the pretrained LLM to create specialized models
-  - [ ] 9) Fine-tuning Personal assistant
+- [X] **Stage 3: Classification & Assistant** - Fine-tunes the pretrained LLM to create specialized models
+  - [X] 9) Fine-tuning Personal assistant
 
 ## Installation
 
