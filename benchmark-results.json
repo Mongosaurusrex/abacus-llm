@@ -1,0 +1,142 @@
+{
+  "dataset": "alpaca-cleaned.json",
+  "split": "deterministic 10% test split after random.Random(42) shuffle",
+  "examples": 100,
+  "max_length": 512,
+  "models": {
+    "model.pth": {
+      "response_loss": 2.4189483885741923,
+      "response_perplexity": 11.234039256876619,
+      "response_tokens": 14621,
+      "samples": [
+        {
+          "instruction": "Create an appropriate response",
+          "input": "\"It's been a pleasure working with you.\"",
+          "reference": "\"Thank you, it's been a pleasure for me as well. I'm always here to assist and help make your life easier.\"",
+          "generated": "\"Thank You!\"\n\n (This will be your first time using this program.)"
+        },
+        {
+          "instruction": "Create an example input for the following task - Summarize the following document with several bullet points.",
+          "input": "An article published on October 10th, 2019 titled \"Women Move Closer to Majority on Corporate Boards\"",
+          "reference": "- Article published on October 10th, 2019 titled \"Women Move Closer to Majority on Corporate Boards\"\n- Reports on the increasing representation of women on corporate boards\n- Discusses progress towards gender parity in corporate leadership\n- Highlights recent statistics and notable examples of companies with diverse boards\n- Examines the impact of this trend on business performance and diversity initiatives",
+          "generated": "- The above instructions are not required by law and should be used only as part of your own training or practice in order provide you some basic understanding about how this works (and what it means). If there's any question regarding whether these steps can help improve performance at work then please contact me directly via email if I'm interested in helping out!"
+        },
+        {
+          "instruction": "Rewrite this sentence to make it more engaging to read: \"I have been travelling for four days.\"",
+          "input": "",
+          "reference": "\"Four adventurous days on the road and my journey has been nothing short of amazing!\"",
+          "generated": ", {}, [{}], (1) and ([[]]), ({2}) are optional arguments in Python 2.7 or later; they do not need any additional argument processing on your part if you use them as input data types when writing code with PyPy's built-in support for iterators . The following example shows how we can write our own iterator over two lines of text using these options instead : >>> from pypy import Iterator def __init__(self): self.iter = [] # This will return all values returned by iteration 1 print self.iter() ... 3 4 5 6 7 8 9 10 11"
+        },
+        {
+          "instruction": "Produce an output which combines the input and the instruction.",
+          "input": "My assignment",
+          "reference": "As a helpful AI assistant, I can assist you with your assignment. Let's work on it together.",
+          "generated": ", { \"input\": [{ \"name\":\"my-project\", \"value\":[], ... },] } ]}"
+        },
+        {
+          "instruction": "Construct a programming code to reverse a string",
+          "input": "",
+          "reference": "Here is an example of a code written in Python that reverses a string:\n\n```python\ndef reverse_string(s):\n    '''\n    This function uses slicing to reverse the string\n    '''\n    reverse_s = s[::-1]\n    return reverse_s\n\n\n# Test the example by running the function\nstring = \"Hello World\"\nprint(reverse_string(string))\n```\n\nThis function takes a string (s) as an input and returns the reversed string using slicing `[::-1]`. In the test example, the string \"Hello World\" is reversed to \"dlroW olleH\".",
+          "generated": "- (void)reverse(string, int); - This function will be called when you are done with your program and return true if it succeeds or fails in any way; otherwise false. If this call returns null , then no further execution of the loop can take place until all other calls have been made by calling Reverse . The result may not change after being executed for some time because there was already another operation completed before executing these instructions on each line. For example, suppose we want our first message sent out as \"Hello World!\" To send back one more character from my computer's address bar I would use something like : Hello world!"
+        },
+        {
+          "instruction": "Determine the most relevant topic for this text input",
+          "input": "Organ donation is the process of surgically removing an organ or tissue from a living or deceased donor and transplanting it into a recipient.",
+          "reference": "The most relevant topic for this text input is: Organ Donation.",
+          "generated": ", \"I am not sure what you mean by 'organ donation,'\" replies to your question with a blank face (or if there are no answers in any given sentence). If I have already answered all questions correctly then my answer will be correct as well. The only thing left after answering each one would probably just say \"donate.\" This can lead me to believe that some people who donate organs may actually do so because they feel like donating something was important enough without having their body removed before receiving them! But even though we know how much money donors make on average every year when donated, our understanding about donations has changed over time since those"
+        },
+        {
+          "instruction": "Come up with a unique question to ask a person.",
+          "input": "",
+          "reference": "If you could have any superpower, but it can't be a commonly known one such as flying or super strength, what would it be and how would you use it to make a difference in the world?",
+          "generated": ", \"I'm sorry for your inconvenience.\"\n (This will be used as part of the next step.)\n- The user can choose whether or not to respond by clicking on their name in this example and then pressing Enter . If they do so, it's possible to send them another message using either 'Enter' , which means you're sending someone else something like email address instead; if no reply was received from anyone at all during these steps, there are two options available - click here again after each one has been sent out!"
+        },
+        {
+          "instruction": "Summarize the life of Alexander the Great in ten sentences.",
+          "input": "",
+          "reference": "1. Alexander the Great was born in 356 BC in Pella, Greece, the son of King Philip II of Macedon and Queen Olympias.\n2. As a youth, he was tutored by the philosopher Aristotle and received a first-class education in philosophy, literature, and warfare.\n3. In 336 BC, at age 20, Alexander became king of Macedon after his father\u2019s assassination, and swiftly consolidated his power.\n4. With ambitions of conquest, Alexander launched a series of military campaigns to expand his empire, which became one of the largest in history.\n5. In 334 BC, he crossed the Hellespont, now known as the Dardanelles, with an army of 35,000 men, and defeated the Persians in a series of battles.\n6. Alexander then conquered Egypt, where he founded the city of Alexandria, one of the many cities he named after himself.\n7. He continued his conquests, reaching as far as modern-day Pakistan, where he defeated King Porus in the Battle of the Hydaspes in 326 BC.\n8. Throughout his journey, Alexander spread Greek culture and influence, introducing ideas and customs that would shape the world for centuries to come.\n9. However, his constant warfare and relentless ambition took a toll on his health and, in 323 BC, at the age of 32, he died in Babylon, possibly of natural causes or poison.\n10. After his death, his empire was divided among his generals, but his legacy lived on, cementing his place as one of history's greatest conquerors.",
+          "generated": ", \"Alexander was born on January 1st 1849 and died at his home near Stony Brook.\""
+        },
+        {
+          "instruction": "Design a survey to collect customer feedback on the quality of a product.",
+          "input": "",
+          "reference": "Welcome to our Product Quality Feedback Survey!\n\nAs a valued customer, your feedback is important to us. We are constantly working to improve the quality of our products, and your responses will help us to do so.\n\nPlease answer the following questions about the product you have purchased:\n\n1. On a scale of 1-5, how satisfied are you with the overall quality of the product? (1 = very dissatisfied; 5 = very satisfied)\n[ drop-down menu with options 1, 2, 3, 4, 5 ]\n\n2. What specifically do you like about the product?\n\n[ text input ]\n\n3. What specifically do you dislike about the product?\n\n[ text input ]\n\n4. Have you experienced any issues or problems with the product? If yes, please describe.\n\n[ text input ]\n\n5. On a scale of 1-5, how likely are you to recommend this product to a friend or family member? (1 = not at all likely; 5 = extremely likely)\n[ drop-down menu with options 1, 2, 3, 4, 5 ]\n\n6. Do you have any suggestions for how we could improve the product in the future?\n\n[ text input ]\n\nThank you for participating in our survey! Your feedback is greatly appreciated and will help us to continue to provide high-quality products to our customers.",
+          "generated": ", \"I'm not sure what you're talking about.\"\n (This will be your first time asking for this question.)\n- You can use any number or combination of numbers and letters in order get more information from customers who are interested in buying something at all levels. For example, if there's one person with high expectations but no desire to buy anything else they might want it because their current job requires them work hard enough so as long ago than when I was working full time my salary would have been $10/hour plus overtime pay! If we were able to find out how many people wanted our products then maybe some other company"
+        },
+        {
+          "instruction": "Classify these movies as comedy, drama, or action.",
+          "input": "Toy Story, Casablanca, Avengers",
+          "reference": "Toy Story is a comedy movie, Casablanca is a drama movie, and Avengers is an action movie.",
+          "generated": "(1) \"I'm sorry I didn't get to see this movie.\"\n- The actor who plays Captain America in Toy Soldier's first scene on screen and then later appears again at his home after he has been shot by Agent Coulson"
+        }
+      ]
+    },
+    "model-finetuned.pth": {
+      "response_loss": 1.8111389621926124,
+      "response_perplexity": 6.117410965683753,
+      "response_tokens": 14621,
+      "samples": [
+        {
+          "instruction": "Create an appropriate response",
+          "input": "\"It's been a pleasure working with you.\"",
+          "reference": "\"Thank you, it's been a pleasure for me as well. I'm always here to assist and help make your life easier.\"",
+          "generated": "\"It's been a pleasure working with you.\""
+        },
+        {
+          "instruction": "Create an example input for the following task - Summarize the following document with several bullet points.",
+          "input": "An article published on October 10th, 2019 titled \"Women Move Closer to Majority on Corporate Boards\"",
+          "reference": "- Article published on October 10th, 2019 titled \"Women Move Closer to Majority on Corporate Boards\"\n- Reports on the increasing representation of women on corporate boards\n- Discusses progress towards gender parity in corporate leadership\n- Highlights recent statistics and notable examples of companies with diverse boards\n- Examines the impact of this trend on business performance and diversity initiatives",
+          "generated": "1. The article discusses the increasing visibility of women in corporate boards and how they are being encouraged to move towards a more equal society.\n2. It also discusses the impact of gender inequality on corporate boards and how it can impact the overall corporate culture.\n3. It also discusses the impact of gender inequality on corporate boards and how it can impact the overall corporate culture."
+        },
+        {
+          "instruction": "Rewrite this sentence to make it more engaging to read: \"I have been travelling for four days.\"",
+          "input": "",
+          "reference": "\"Four adventurous days on the road and my journey has been nothing short of amazing!\"",
+          "generated": "\"I've traveled for four days.\""
+        },
+        {
+          "instruction": "Produce an output which combines the input and the instruction.",
+          "input": "My assignment",
+          "reference": "As a helpful AI assistant, I can assist you with your assignment. Let's work on it together.",
+          "generated": "\"I'm sorry, but I don't have an assignment for you.\""
+        },
+        {
+          "instruction": "Construct a programming code to reverse a string",
+          "input": "",
+          "reference": "Here is an example of a code written in Python that reverses a string:\n\n```python\ndef reverse_string(s):\n    '''\n    This function uses slicing to reverse the string\n    '''\n    reverse_s = s[::-1]\n    return reverse_s\n\n\n# Test the example by running the function\nstring = \"Hello World\"\nprint(reverse_string(string))\n```\n\nThis function takes a string (s) as an input and returns the reversed string using slicing `[::-1]`. In the test example, the string \"Hello World\" is reversed to \"dlroW olleH\".",
+          "generated": "Here is a simple example of a programming code that can be used to reverse a string:\n\n```python\ndef reverse_string(str):\n    return str\n\n# Define the function to reverse the string\nreverse_string = \"Hello, World!\"\nprint(reverse_string) # True\n```"
+        },
+        {
+          "instruction": "Determine the most relevant topic for this text input",
+          "input": "Organ donation is the process of surgically removing an organ or tissue from a living or deceased donor and transplanting it into a recipient.",
+          "reference": "The most relevant topic for this text input is: Organ Donation.",
+          "generated": "Topic: Organ donation\n\nTopic: Transplantation\n\nTopic: Organ donation\n\nTopic: Organ donation"
+        },
+        {
+          "instruction": "Come up with a unique question to ask a person.",
+          "input": "",
+          "reference": "If you could have any superpower, but it can't be a commonly known one such as flying or super strength, what would it be and how would you use it to make a difference in the world?",
+          "generated": "\"What are some of your favorite foods and drinks?\""
+        },
+        {
+          "instruction": "Summarize the life of Alexander the Great in ten sentences.",
+          "input": "",
+          "reference": "1. Alexander the Great was born in 356 BC in Pella, Greece, the son of King Philip II of Macedon and Queen Olympias.\n2. As a youth, he was tutored by the philosopher Aristotle and received a first-class education in philosophy, literature, and warfare.\n3. In 336 BC, at age 20, Alexander became king of Macedon after his father\u2019s assassination, and swiftly consolidated his power.\n4. With ambitions of conquest, Alexander launched a series of military campaigns to expand his empire, which became one of the largest in history.\n5. In 334 BC, he crossed the Hellespont, now known as the Dardanelles, with an army of 35,000 men, and defeated the Persians in a series of battles.\n6. Alexander then conquered Egypt, where he founded the city of Alexandria, one of the many cities he named after himself.\n7. He continued his conquests, reaching as far as modern-day Pakistan, where he defeated King Porus in the Battle of the Hydaspes in 326 BC.\n8. Throughout his journey, Alexander spread Greek culture and influence, introducing ideas and customs that would shape the world for centuries to come.\n9. However, his constant warfare and relentless ambition took a toll on his health and, in 323 BC, at the age of 32, he died in Babylon, possibly of natural causes or poison.\n10. After his death, his empire was divided among his generals, but his legacy lived on, cementing his place as one of history's greatest conquerors.",
+          "generated": "Alexander the Great was a renowned military and political figure who played a crucial role in shaping the course of history, inspiring the development of modern warfare, and leading to the establishment of the Roman Empire. He was also responsible for building the foundations of modern civilization, including the Roman Forum, which eventually led to the formation of the Western Roman Republic."
+        },
+        {
+          "instruction": "Design a survey to collect customer feedback on the quality of a product.",
+          "input": "",
+          "reference": "Welcome to our Product Quality Feedback Survey!\n\nAs a valued customer, your feedback is important to us. We are constantly working to improve the quality of our products, and your responses will help us to do so.\n\nPlease answer the following questions about the product you have purchased:\n\n1. On a scale of 1-5, how satisfied are you with the overall quality of the product? (1 = very dissatisfied; 5 = very satisfied)\n[ drop-down menu with options 1, 2, 3, 4, 5 ]\n\n2. What specifically do you like about the product?\n\n[ text input ]\n\n3. What specifically do you dislike about the product?\n\n[ text input ]\n\n4. Have you experienced any issues or problems with the product? If yes, please describe.\n\n[ text input ]\n\n5. On a scale of 1-5, how likely are you to recommend this product to a friend or family member? (1 = not at all likely; 5 = extremely likely)\n[ drop-down menu with options 1, 2, 3, 4, 5 ]\n\n6. Do you have any suggestions for how we could improve the product in the future?\n\n[ text input ]\n\nThank you for participating in our survey! Your feedback is greatly appreciated and will help us to continue to provide high-quality products to our customers.",
+          "generated": "1. What are your thoughts on the quality and performance of our product?\n2. How would you rate the overall quality of our product?\n3) How would you rate the level of customer service provided by our company?\n4.) What are your thoughts on the user experience of our product?\n5.) How would you rate the level or quality of our product?"
+        },
+        {
+          "instruction": "Classify these movies as comedy, drama, or action.",
+          "input": "Toy Story, Casablanca, Avengers",
+          "reference": "Toy Story is a comedy movie, Casablanca is a drama movie, and Avengers is an action movie.",
+          "generated": "Action."
+        }
+      ]
+    }
+  }
+}
